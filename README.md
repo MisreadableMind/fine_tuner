@@ -14,13 +14,13 @@ A toolkit for fine-tuning models with robust data preparation, training, and eva
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/fine_tuner.git
+git clone https://github.com/MisreadableMind/fine_tuner.git
 cd fine_tuner
 ```
 
 2. Set up your environment:
 ```bash
-python -m venv venv
+python3.10 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -33,12 +33,12 @@ cp .env.example .env
 
 4. Prepare your data:
 ```bash
-python scripts/prepare_data.py --input data/raw/your_data.csv --output data/processed/
+python3.10 scripts/prepare_data.py --input data/raw/your_data.csv --output data/processed/
 ```
 
 5. Run fine-tuning:
 ```bash
-python scripts/run_fine_tuning.py --training-file data/processed/training.jsonl
+python3.10 scripts/run_fine_tuning.py --training-file data/processed/training.jsonl
 ```
 
 ## 📁 Project Structure
@@ -143,7 +143,7 @@ Use the provided notebooks to:
 
 Run the test suite:
 ```bash
-python -m pytest tests/
+python3.10 -m pytest tests/
 ```
 
 ## 📈 Contributing
